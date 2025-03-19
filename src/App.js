@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Dashboard from './pages/Dashboard'
@@ -7,15 +7,20 @@ import Navbar from './components/Navbar'
 import Menubar from './components/Menubar'
 
 const App = () => {
+  const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   return (
-    <div className='text-center'>
+    <div className="flex flex-col h-screen">
       <BrowserRouter>
-      <Navbar />
-        <Routes>
-          <Route path='/' element={<Dashboard />} />
-          <Route path='/product' element={<Product />} />
-        </Routes>
-      <Menubar />
+        <Navbar menuBar={() => setIsSidebarVisible(!isSidebarVisible)} />
+        <div className="flex flex-1 overflow-hidden absolute top-16 left-0 right-0 bottom-0">
+          {isSidebarVisible && <Menubar />}
+          <div className="flex-1 overflow-y-auto p-4 bg-gray-100">
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/product" element={<Product />} />
+            </Routes>
+          </div>
+        </div>
       </BrowserRouter>
     </div>
   )
