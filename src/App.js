@@ -3,6 +3,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Dashboard from './pages/Dashboard'
 import Product from './pages/Product'
+import Favourites from './pages/Favourites'
+import Inbox from './pages/Inbox'
+import OrderLists from './pages/OrderLists'
+import ProductStock from './pages/ProductStock'
+
+
+
 import Navbar from './components/Navbar'
 import Menubar from './components/Menubar'
 
@@ -18,6 +25,11 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/product" element={<Product />} />
+              <Route path="/favourites" element={<Favourites />} />
+              <Route path="/inbox" element={<Inbox />} />
+              <Route path="/orderlists" element={<OrderLists />} />
+              <Route path="/productstock" element={<ProductStock />} />
+              
             </Routes>
           </div>
         </div>
