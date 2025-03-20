@@ -132,14 +132,14 @@ const Products = () => {
               {editingProductId ? 'Edit Product' : 'Add New Product'}
             </h2>
             <form onSubmit={handleSubmit} className="space-y-4">
-              {['title', 'price', 'discountPercentage', 'rating', 'stock', 'category', 'thumbnail'].map((field) => (
+              {['title', 'price', 'discountPercentage', 'rating', 'stock', 'category', 'thumbnail'].map((item) => (
                 <input
-                  key={field}
-                  type={field === 'price' || field === 'discountPercentage' || field === 'rating' || field === 'stock' ? 'number' : 'text'}
-                  name={field}
-                  value={newProduct[field]}
+                  key={item}
+                  type={item === 'price' || item === 'discountPercentage' || item === 'rating' || item === 'stock' ? 'number' : 'text'}
+                  name={item}
+                  value={newProduct[item]}
                   onChange={handleChange}
-                  placeholder={field.charAt(0).toUpperCase() + field.slice(1)}
+                  placeholder={item.charAt(0).toUpperCase() + item.slice(1)}
                   className="w-full p-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                 />

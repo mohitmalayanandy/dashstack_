@@ -11,12 +11,13 @@ import Bin from '../components/inbox/Bin';
 
 const Inbox = () => {
   return (
-    <div className="flex flex-col h-screen p-6">
-      <h1 className="text-xl font-semibold mb-4">Inbox</h1>
+    <div className="flex flex-col h-full p-4">
+      <h1 className="text-lg font-semibold mb-1">Inbox</h1>
       <div className="flex justify-between rounded-lg shadow-lg p-4 h-full">
         <MailList />
-        <div className="flex-1 h-full ml-4 bg-white rounded-lg p-4">
+        <div className="flex-1 h-full ml-2 bg-white rounded-lg p-4">
           <Routes>
+            <Route path="/" element={<h1 className='flex justify-center text-center text-5xl font-extrabold text-green-800 py-16 my-28'>Welcome to Your Mailbox</h1>} />
             <Route path="allmail" element={<AllMail />} />
             <Route path="starred" element={<Starred />} />
             <Route path="sent" element={<Sent />} />

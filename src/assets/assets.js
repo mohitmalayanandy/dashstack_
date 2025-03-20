@@ -2,6 +2,7 @@ import bin_icon from './images/bin_icon.png';
 import calender_icon from './images/calender_icon.png';
 import contact_icon from './images/contact_icon.png';
 import dashboard_icon from './images/dashboard_icon.png';
+import delete_icon from './images/delete_icon.png';
 import draft_icon from './images/draft_icon.png';
 import drop_down from './images/drop_down.png';
 import favourite_icon from './images/favourite_icon.png';
@@ -41,6 +42,7 @@ export const assets = {
     calender_icon,
     contact_icon,
     dashboard_icon,
+    delete_icon,
     draft_icon,
     drop_down,
     favourite_icon,

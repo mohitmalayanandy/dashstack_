@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "sender": "Jhon Doe",
+        "subject": "Meeting Reminder",
+        "body": "Hi, don't forget about the meeting at 3 PM.",
+        "date": "2021-07-01"
+    },
+    {
+        "id": 2,
+        "sender": "Jane Smith",
+        "subject": "Project Update",
+        "body": "The project is on track for completion by the end of the month.",
+        "date": "2021-07-02"
+    },
+    {
+        "id": 3,
+        "sender": "Alice Johnson",
+        "subject": "Lunch Invitation",
+        "body": "Would you like to join me for lunch tomorrow?",
+        "date": "2021-07-03"
+    },
+    {
+        "id": 4,
+        "sender": "Bob Brown",
+        "subject": "Weekly Report",
+        "body": "Please find the weekly report attached.",
+        "date": "2021-07-04"
+    },
+    {
+        "id": 5,
+        "sender": "Carol White",
+        "subject": "Team Outing",
+        "body": "We are planning a team outing next weekend. Are you in?",
+        "date": "2021-07-05"
+    },
+    {
+        "id": 6,
+        "sender": "David Green",
+        "subject": "Budget Approval",
+        "body": "The budget for the next quarter has been approved.",
+        "date": "2021-07-06"
+    },
+    {
+        "id": 7,
+        "sender": "Eva Blue",
+        "subject": "Client Feedback",
+        "body": "We received positive feedback from the client.",
+        "date": "2021-07-07"
+    },
+    {
+        "id": 8,
+        "sender": "Frank Black",
+        "subject": "New Hire",
+        "body": "We have a new hire joining the team next week.",
+        "date": "2021-07-08"
+    },
+    {
+        "id": 9,
+        "sender": "Grace White",
+        "subject": "Office Renovation",
+        "body": "The office renovation will start next Monday.",
+        "date": "2021-07-09"
+    },
+    {
+        "id": 10,
+        "sender": "Hank Green",
+        "subject": "Training Session",
+        "body": "There will be a training session on the new software.",
+        "date": "2021-07-10"
+    },
+    {
+        "id": 11,
+        "sender": "Ivy Blue",
+        "subject": "Holiday Schedule",
+        "body": "The holiday schedule has been finalized.",
+        "date": "2021-07-11"
+    },
+    {
+        "id": 12,
+        "sender": "Jack Black",
+        "subject": "Server Maintenance",
+        "body": "The server maintenance is scheduled for this weekend.",
+        "date": "2021-07-12"
+    },
+    {
+        "id": 13,
+        "sender": "Karen White",
+        "subject": "Policy Update",
+        "body": "Please review the updated company policies.",
+        "date": "2021-07-13"
+    },
+    {
+        "id": 14,
+        "sender": "Leo Green",
+        "subject": "Team Meeting",
+        "body": "There will be a team meeting tomorrow at 10 AM.",
+        "date": "2021-07-14"
+    },
+    {
+        "id": 15,
+        "sender": "Mona Blue",
+        "subject": "Performance Review",
+        "body": "Your performance review is scheduled for next week.",
+        "date": "2021-07-15"
+    },
+    {
+        "id": 16,
+        "sender": "Nina Black",
+        "subject": "Project Kickoff",
+        "body": "The project kickoff meeting is scheduled for Monday.",
+        "date": "2021-07-16"
+    },
+    {
+        "id": 17,
+        "sender": "Oscar White",
+        "subject": "Client Meeting",
+        "body": "The client meeting is scheduled for next Wednesday.",
+        "date": "2021-07-17"
+    },
+    {
+        "id": 18,
+        "sender": "Paul Green",
+        "subject": "Budget Review",
+        "body": "The budget review meeting is scheduled for Friday.",
+        "date": "2021-07-18"
+    }
+]
