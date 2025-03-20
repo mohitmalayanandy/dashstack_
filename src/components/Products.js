@@ -116,11 +116,7 @@ const Products = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      <h1 className="text-4xl font-bold text-center mb-6 text-gray-800">
-        Product List
-      </h1>
-
-      <div className="flex justify-center mb-6">
+      <div className="flex justify-end mb-6">
         <button
           onClick={() => setIsModalOpen(true)}
           className="px-6 py-3 bg-blue-500 text-white rounded shadow-md hover:bg-blue-600 transition"

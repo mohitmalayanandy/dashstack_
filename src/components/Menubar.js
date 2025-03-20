@@ -11,80 +11,75 @@ const Menubar = () => {
     }
 
     return (
-        <div className="w-56 h-full p-6">
+        <div className="w-56 h-full overflow-y-auto p-6">
             <ul className="space-y-4">
-                <li>
-                    <Link
-                        to="/"
-                        className={`block p-2 rounded ${activeItem === '/' ? 'bg-blue-700 text-white' : 'hover:bg-blue-500'}`}
-                        onClick={() => handleItemClick('/')}>
-                        <div className="flex items-center p-2 hover:bg-blue-500 rounded cursor-pointer">
-                            <img src={assets.dashboard_icon} alt="dashboard_icon" className="h-4 w-4" />
-                            <p className="ml-4">Dashboard</p>
-                        </div>
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        to="/product"
-                        className={`block p-2 rounded ${activeItem === '/product' ? 'bg-blue-700 text-white' : 'hover:bg-blue-500'}`}
-                        onClick={() => handleItemClick('/product')}
-                    >
-                        <div className="flex items-center p-2 hover:bg-blue-500 rounded cursor-pointer">
-                            <img src={assets.product_icon} alt="product_icon" className="h-4 w-4" />
-                            <p className="ml-4">Product</p>
-                        </div>
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        to="/favourites"
-                        className={`block p-2 rounded ${activeItem === '/favourites' ? 'bg-blue-700 text-white' : 'hover:bg-blue-500'}`}
-                        onClick={() => handleItemClick('/favourites')}
-                    >
-                        <div className="flex items-center p-2 hover:bg-blue-500 rounded cursor-pointer">
-                            <img src={assets.favourite_icon} alt="favourites_icon" className="h-4 w-4" />
-                            <p className="ml-4">Favourites</p>
-                        </div>
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        to="/inbox"
-                        className={`block p-2 rounded ${activeItem === '/inbox' ? 'bg-blue-700 text-white' : 'hover:bg-blue-500'}`}
-                        onClick={() => handleItemClick('/inbox')}
-                    >
-                        <div className="flex items-center p-2 hover:bg-blue-500 rounded cursor-pointer">
-                            <img src={assets.inbox_icon} alt="inbox_icon" className="h-4 w-4" />
-                            <p className="ml-4">Inbox</p>
-                        </div>
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        to="/orderlists"
-                        className={`block p-2 rounded ${activeItem === '/orderlists' ? 'bg-blue-700 text-white' : 'hover:bg-blue-500'}`}
-                        onClick={() => handleItemClick('/orderlists')}
-                    >
-                        <div className="flex items-center p-2 hover:bg-blue-500 rounded cursor-pointer">
-                            <img src={assets.order_list} alt="order_lists_icon" className="h-4 w-4" />
-                            <p className="ml-4">Order Lists</p>
-                        </div>
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        to="/productstock"
-                        className={`block p-2 rounded ${activeItem === '/productstock' ? 'bg-blue-700 text-white' : 'hover:bg-blue-500'}`}
-                        onClick={() => handleItemClick('/productstock')}
-                    >
-                        <div className="flex items-center p-2 hover:bg-blue-500 rounded cursor-pointer">
-                            <img src={assets.product_stock} alt="product_stock_icon" className="h-4 w-4" />
-                            <p className="ml-4">Product Stock</p>
-                        </div>
-                    </Link>
-                </li>
+                {[
+                    { icon: assets.dashboard_icon, label: 'Dashboard', path: '/' },
+                    { icon: assets.product_icon, label: 'Product', path: '/product' },
+                    { icon: assets.favourite_icon, label: 'Favourites', path: '/favourites' },
+                    { icon: assets.inbox_icon, label: 'Inbox', path: '/inbox' },
+                    { icon: assets.order_list, label: 'Order Lists', path: '/orderlists' },
+                    { icon: assets.product_stock, label: 'Product Stock', path: '/productstock' },
+                ].map((item, index) => (
+                    <li key={index}>
+                        <Link
+                            to={item.path}
+                            className={`block p-2 rounded ${activeItem === item.path ? 'bg-blue-700 text-white' : 'hover:bg-blue-500'}`}
+                            onClick={() => handleItemClick(item.path)}
+                        >
+                            <div className="flex items-center p-2 rounded cursor-pointer">
+                                <img src={item.icon} alt={`${item.label}_icon`} className="h-4 w-4" />
+                                <p className="ml-4">{item.label}</p>
+                            </div>
+                        </Link>
+                    </li>
+                ))}
             </ul>
+            <hr className="w-full border-gray-300" />
+            <p className="mt-4 mb-2 text-gray-500">Pages</p>
+            <div className="space-y-1">
+                {[
+                    { icon: assets.pricing_icon, label: 'Pricing', path: '/pricing' },
+                    { icon: assets.calender_icon, label: 'Calender', path: '/calender' },
+                    { icon: assets.todo_icon, label: 'To-Do', path: '/todo' },
+                    { icon: assets.contact_icon, label: 'Contact', path: '/contact' },
+                    { icon: assets.invoice_icon, label: 'Invoice', path: '/invoice' },
+                    { icon: assets.ui_icon, label: 'UI Element', path: '/uielement' },
+                    { icon: assets.team_icon, label: 'Team', path: '/team' },
+                    { icon: assets.table_icon, label: 'Table', path: '/table' },
+                ].map((item, index) => (
+                    <Link
+                        key={index}
+                        to={item.path}
+                        className={`block p-2 rounded ${activeItem === item.path ? 'bg-blue-700 text-white' : 'hover:bg-blue-500'}`}
+                        onClick={() => handleItemClick(item.path)}
+                    >
+                        <div className="flex items-center p-2 rounded cursor-pointer">
+                            <img src={item.icon} alt={item.label} className="h-4 w-4" />
+                            <p className="ml-4">{item.label}</p>
+                        </div>
+                    </Link>
+                ))}
+            </div>
+            <hr className="w-full border-gray-300" />
+            <div className="space-y-1">
+                {[
+                    { icon: assets.setting_icon, label: 'Settings', path: '/settings' },
+                    { icon: assets.logout_icon, label: 'Logout', path: '/logout' },
+                ].map((item, index) => (
+                    <Link
+                        key={index}
+                        to={item.path}
+                        className={`block p-2 rounded ${activeItem === item.path ? 'bg-blue-700 text-white' : 'hover:bg-blue-500'}`}
+                        onClick={() => handleItemClick(item.path)}
+                    >
+                        <div className="flex items-center p-2 rounded cursor-pointer">
+                            <img src={item.icon} alt={item.label} className="h-4 w-4" />
+                            <p className="ml-4">{item.label}</p>
+                        </div>
+                    </Link>
+                ))}
+            </div>
         </div>
     )
 }

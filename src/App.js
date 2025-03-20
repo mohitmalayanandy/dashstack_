@@ -7,6 +7,16 @@ import Favourites from './pages/Favourites'
 import Inbox from './pages/Inbox'
 import OrderLists from './pages/OrderLists'
 import ProductStock from './pages/ProductStock'
+import Pricing from './pages/Pricing'
+import Calender from './pages/Calender'
+import Todo from './pages/Todo'
+import Contact from './pages/Contact'
+import Invoice from './pages/Invoice'
+import UIElement from './pages/UIElement'
+import Team from './pages/Team'
+import Table from './pages/Table'
+import Settings from './pages/Settings'
+import Logout from './pages/Logout'
 
 
 
@@ -26,10 +36,19 @@ const App = () => {
               <Route path="/" element={<Dashboard />} />
               <Route path="/product" element={<Product />} />
               <Route path="/favourites" element={<Favourites />} />
-              <Route path="/inbox" element={<Inbox />} />
+              <Route path="/inbox/*" element={<Inbox />} />
               <Route path="/orderlists" element={<OrderLists />} />
               <Route path="/productstock" element={<ProductStock />} />
-              
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/calender" element={<Calender />} />
+              <Route path="/todo" element={<Todo />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/invoice" element={<Invoice />} />
+              <Route path="/uielement" element={<UIElement />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/table" element={<Table />} />
+              <Route path="/settings" element={<Settings />} />
+              <Route path="/logout" element={<Logout />} />
             </Routes>
           </div>
         </div>
