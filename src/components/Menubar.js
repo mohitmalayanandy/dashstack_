@@ -24,7 +24,7 @@ const Menubar = () => {
                     <li key={index}>
                         <Link
                             to={item.path}
-                            className={`block p-2 rounded ${activeItem === item.path ? 'bg-blue-700 text-white' : 'hover:bg-blue-500'}`}
+                            className={`block p-2 rounded ${activeItem === item.path ? 'bg-blue-600 text-white' : 'hover:bg-blue-400'}`}
                             onClick={() => handleItemClick(item.path)}
                         >
                             <div className="flex items-center p-2 rounded cursor-pointer">

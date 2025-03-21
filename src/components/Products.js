@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
+import { assets } from '../../src/assets/assets';
 const API_URL = "https://dummyjson.com/products";
 
 const Products = () => {
@@ -114,12 +114,17 @@ const Products = () => {
     });
   };
 
+  const handleFavourite = () => {
+    
+    console.log('Favourite clicked')
+  }
+
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <div className="flex justify-end mb-6">
+    <div className="min-h-screen bg-gray-100 p-2">
+      <div className="flex justify-end mb-4">
         <button
           onClick={() => setIsModalOpen(true)}
-          className="px-6 py-3 bg-blue-500 text-white rounded shadow-md hover:bg-blue-600 transition"
+          className="px-4 py-2 bg-blue-500 text-white rounded shadow-md hover:bg-blue-600 transition"
         >
           Add Product
         </button>
@@ -166,24 +171,29 @@ const Products = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {data.map((product) => (
-          <div key={product.id} className="p-6 bg-white text-black rounded-xl shadow-xl">
-            <img src={product.thumbnail} alt={product.title} className="w-full h-48 object-cover mt-4 rounded-lg shadow-md" />
-            <h3 className="text-2xl font-semibold mb-2">{product.title}</h3>
-            <p>Price: $ {product.price}</p>
-            <p>Discount: {product.discountPercentage}%</p>
-            <p>Rating: {product.rating}⭐</p>
-            <p>Stock: {product.stock}</p>
-            <p>Category: {product.category}</p>
+          <div key={product.id} className="p-6 bg-white text-black rounded-lg">
+            <img src={product.thumbnail} alt={product.title} className="w-full h-40 mt-1 object-cover" />
+            <div className='flex justify-between items-center  mt-4'>
+              <div>
+                <h3 className="font-bold mb-2">{product.title}</h3>
+                <p className='text-blue-500'>$ {product.price}</p>
+                <p>{product.rating}⭐</p>
+              </div>
+              <div>
+                <img src={assets.favourite_icon} alt="" onClick={handleFavourite}/>
+              </div>
+            </div>
+
             <div className="flex gap-4 mt-4">
               <button
                 onClick={() => handleEdit(product)}
-                className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition"
+                className="p-2 bg-gray-200 text-black rounded hover:bg-gray-300 transition"
               >
-                Edit
+                Edit Product
               </button>
               <button
                 onClick={() => deleteProduct(product.id)}
-                className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition"
+                className="p-2 bg-red-500 text-white rounded hover:bg-red-600 transition"
               >
                 Delete
               </button>

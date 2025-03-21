@@ -10,6 +10,10 @@ const AllMail = () => {
       .catch(error => console.error('Error fetching mails:', error));
   }, []);
 
+  const handleDelete = (id) => {
+    setMails(mails.filter(mail => mail.id !== id));
+  };
+
   return (
     <div className='flex-col gap-2 h-full py-6'>
       <div className='flex justify-between items-center'>
@@ -37,6 +41,9 @@ const AllMail = () => {
                 <td className="px-4 py-2">{mail.subject}</td>
                 <td className="px-4 py-2">{mail.body}</td>
                 <td className="px-4 py-2">{(new Date(mail.date)).toLocaleString()}</td>
+                <td className="px-4 py-2">
+                  <button onClick={() => handleDelete(mail.id)} className="text-red-500">Delete</button>
+                </td>
               </tr>
             ))}
           </tbody>
