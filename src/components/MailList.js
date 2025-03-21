@@ -45,7 +45,7 @@ const MailList = () => {
                             <li key={index}>
                                 <Link
                                     to={item.path}
-                                    className={`block rounded ${activeItem === item.path ? 'bg-blue-200 text-black' : 'hover:bg-blue-100'}`}
+                                    className={`block rounded ${activeItem === item.path ? 'bg-blue-500 text-white' : 'hover:bg-blue-100'}`}
                                     onClick={() => handleItemClick(item.path)}
                                 >
                                     <div className="flex items-center p-2 rounded cursor-pointer">

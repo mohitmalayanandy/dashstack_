@@ -59,7 +59,7 @@ const Revenue = () => {
 
   return (
     <div className="m-5 p-5 bg-white rounded-xl shadow-md md:m-3 md:p-3 sm:m-2 sm:p-2">
-                <h2 className="text-lg font-semibold mb-4">Sales Details</h2>
+                <h2 className="text-lg font-semibold mb-4">Revenue</h2>
                 <div className="overflow-x-auto">
                     <div className="min-w-[600px]">
                         <ReactApexChart options={state.options} series={state.series} type="area" height={300} />

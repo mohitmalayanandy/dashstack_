@@ -32,7 +32,7 @@ const Products = () => {
         throw new Error('Failed to fetch data');
       }
       const result = await response.json();
-      const products = result.products.slice(0, 20);
+      const products = result.products;
 
       const formattedProducts = products.map(product => ({
         ...product,

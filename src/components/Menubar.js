@@ -12,7 +12,7 @@ const Menubar = () => {
 
     return (
         <div className="w-56 h-full overflow-y-auto p-6">
-            <ul className="space-y-4">
+            <ul className="space-y-1">
                 {[
                     { icon: assets.dashboard_icon, label: 'Dashboard', path: '/' },
                     { icon: assets.product_icon, label: 'Product', path: '/product' },
@@ -24,10 +24,10 @@ const Menubar = () => {
                     <li key={index}>
                         <Link
                             to={item.path}
-                            className={`block p-2 rounded ${activeItem === item.path ? 'bg-blue-600 text-white' : 'hover:bg-blue-400'}`}
+                            className={`block p-1 rounded ${activeItem === item.path ? 'bg-blue-500 text-white' : 'hover:bg-blue-100'}`}
                             onClick={() => handleItemClick(item.path)}
                         >
-                            <div className="flex items-center p-2 rounded cursor-pointer">
+                            <div className="flex items-center p-1 rounded cursor-pointer">
                                 <img src={item.icon} alt={`${item.label}_icon`} className="h-4 w-4" />
                                 <p className="ml-4">{item.label}</p>
                             </div>
@@ -51,10 +51,10 @@ const Menubar = () => {
                     <Link
                         key={index}
                         to={item.path}
-                        className={`block p-2 rounded ${activeItem === item.path ? 'bg-blue-700 text-white' : 'hover:bg-blue-500'}`}
+                        className={`block p-1 rounded ${activeItem === item.path ? 'bg-blue-500 text-white' : 'hover:bg-blue-100'}`}
                         onClick={() => handleItemClick(item.path)}
                     >
-                        <div className="flex items-center p-2 rounded cursor-pointer">
+                        <div className="flex items-center p-1 rounded cursor-pointer">
                             <img src={item.icon} alt={item.label} className="h-4 w-4" />
                             <p className="ml-4">{item.label}</p>
                         </div>
@@ -70,10 +70,10 @@ const Menubar = () => {
                     <Link
                         key={index}
                         to={item.path}
-                        className={`block p-2 rounded ${activeItem === item.path ? 'bg-blue-700 text-white' : 'hover:bg-blue-500'}`}
+                        className={`block p-1 rounded ${activeItem === item.path ? 'bg-blue-500 text-white' : 'hover:bg-blue-100'}`}
                         onClick={() => handleItemClick(item.path)}
                     >
-                        <div className="flex items-center p-2 rounded cursor-pointer">
+                        <div className="flex items-center p-1 rounded cursor-pointer">
                             <img src={item.icon} alt={item.label} className="h-4 w-4" />
                             <p className="ml-4">{item.label}</p>
                         </div>

@@ -15,8 +15,8 @@ const AllMail = () => {
   };
 
   return (
-    <div className='flex-col gap-2 h-full py-6'>
-      <div className='flex justify-between items-center'>
+    <div className='flex-col gap-2 h-full'>
+      <div className='flex justify-between items-center px-4'>
         <div className='hidden md:flex items-center border border-gray-300 rounded-full bg-gray-100 px-4 py-1 w-60'>
           <img src={assets.search_icon} alt="search_icon" className='h-4 w-4' />
           <input
@@ -25,13 +25,14 @@ const AllMail = () => {
             placeholder="Search"
           />
         </div>
-        <div className='flex justify-between gap-3 h-5 w-5 mr-20'>
+        <div className='flex justify-between  gap-3 h-5 w-5 mr-20 m-2'>
           <img src={assets.mail_icon} alt="mail_icon" className='cursor-pointer'/>
-          <img src={assets.spam_icon} alt="spam_icon" className='cursor-pointer'/>
-          <img src={assets.delete_icon} alt="" className='cursor-pointer'/>
+          <img src={assets.spam_icon} alt="spam_icon" className='cursor-pointer h-4 w-4'/>
+          <img src={assets.delete_icon} alt="" className='cursor-pointer h-4 w-4'/>
         </div>
       </div>
-      <div className="space-y-1 p-2 m-1 h-full rounded-md overflow-y-auto bg-gradient-to-bl from-green-300 to-blue-200">
+      <hr />
+      <div className="space-y-1 h-full overflow-y-auto rounded-md">
         <table className="min-w-full bg-white bg-opacity-0">
           <tbody>
             {mails.map((mail) => (
@@ -42,7 +43,7 @@ const AllMail = () => {
                 <td className="px-4 py-2">{mail.body}</td>
                 <td className="px-4 py-2">{(new Date(mail.date)).toLocaleString()}</td>
                 <td className="px-4 py-2">
-                  <button onClick={() => handleDelete(mail.id)} className="text-red-500">Delete</button>
+                  <img src={assets.bin_icon} alt="" onClick={() => handleDelete(mail.id)} className="text-red-500 cursor-pointer h-4 w-5"/>
                 </td>
               </tr>
             ))}

@@ -7,11 +7,11 @@ const Navbar = ({ menuBar }) => {
             <h1 className="text-2xl font-bold">
                 <span className="text-blue-500">Dash</span>Stack
             </h1>
-            <div className='flex items-center space-x-4'>
+            <div className='flex items-center space-x-6'>
                 <img
                     src={assets.menu_bar}
                     alt="menu_bar"
-                    className='h-6 w-6 cursor-pointer'
+                    className='h-4 w-4 cursor-pointer'
                     onClick={menuBar} />
 
                 <div className='hidden md:flex items-center border border-gray-300 rounded-full bg-gray-100 px-4 py-1 w-96'>

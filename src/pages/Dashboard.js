@@ -9,13 +9,13 @@ import SalesAnalytics from '../components/SalesAnalytics';
 
 const Dashboard = () => {
     return (
-        <div className="space-y-4">
-            <h2 className="text-2xl font-bold mb-4">Dashboard</h2>
+        <div className="">
+            <h2 className="text-lg font-semibold ml-5 md:ml-4">Dashboard</h2>
             <TotalStats />
             <SalesDetails />
             <DealsDetails />
             <Revenue />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
                 <Customers />
                 <FeaturedProduct />
                 <SalesAnalytics />
