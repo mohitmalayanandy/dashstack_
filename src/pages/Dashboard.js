@@ -9,13 +9,17 @@ import SalesAnalytics from '../components/SalesAnalytics';
 
 const Dashboard = () => {
     return (
-        <div className="">
-            <h2 className="text-lg font-semibold ml-5 md:ml-4">Dashboard</h2>
-            <TotalStats />
-            <SalesDetails />
-            <DealsDetails />
-            <Revenue />
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+        <div>
+            <h2 className="text-lg font-semibold ml-5">Dashboard</h2>
+            <div className="gap-1">
+                <TotalStats />
+                <SalesDetails />
+                <div className="my-7">{/* Added gap */}</div> 
+                <DealsDetails />
+                <div className="my-7">{/* Added gap */}</div>
+                <Revenue />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
                 <Customers />
                 <FeaturedProduct />
                 <SalesAnalytics />
@@ -24,4 +28,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard
+export default Dashboard;

@@ -6,6 +6,7 @@ import delete_icon from './images/delete_icon.png';
 import draft_icon from './images/draft_icon.png';
 import drop_down from './images/drop_down.png';
 import favourite_icon from './images/favourite_icon.png';
+import filled_favourite_icon from './images/filled_favourite_icon.png';
 import graph from './images/graph.png';
 import importantmsg_icon from './images/importantmsg_icon.png';
 import inbox_icon from './images/inbox_icon.png';
@@ -37,6 +38,7 @@ import user_icon from './images/user_icon.png';
 
 
 
+
 export const assets = {
     bin_icon,
     calender_icon,
@@ -46,6 +48,7 @@ export const assets = {
     draft_icon,
     drop_down,
     favourite_icon,
+    filled_favourite_icon,
     graph,
     importantmsg_icon,
     invoice_icon,

@@ -48,7 +48,7 @@ const SalesAnalytics = () => {
 
     });
     return (
-        <div className="m-5 p-5 bg-white rounded-xl shadow-md md:m-3 md:p-3 sm:m-2 sm:p-2">
+        <div className="m-2 p-2 bg-white rounded-xl shadow-md md:m-3 md:p-3 sm:m-2 sm:p-2">
             <ReactApexChart options={state.options} series={state.series} type="radar" height={350} />
         </div>
     )

@@ -58,7 +58,7 @@ const Revenue = () => {
     });
 
   return (
-    <div className="m-5 p-5 bg-white rounded-xl shadow-md md:m-3 md:p-3 sm:m-2 sm:p-2">
+    <div className="m-3 p-3 bg-white rounded-xl shadow-md md:m-3 md:p-3 sm:m-2 sm:p-2">
                 <h2 className="text-lg font-semibold mb-4">Revenue</h2>
                 <div className="overflow-x-auto">
                     <div className="min-w-[600px]">

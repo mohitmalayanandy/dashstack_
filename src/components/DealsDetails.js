@@ -89,7 +89,7 @@ const DealsDetails = () => {
     };
 
     return (
-        <div className="m-3 p-4 bg-white rounded-xl shadow-md">
+        <div className="m-3 p-3 bg-white rounded-xl shadow-md">
             <h2 className="text-lg font-semibold mb-4">Order Details</h2>
             <div className="overflow-x-auto">
                 <table className="min-w-full bg-white border border-gray-200 rounded-lg">
