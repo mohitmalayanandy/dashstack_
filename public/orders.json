@@ -5,7 +5,7 @@
       "address": "Bhubaneswar, Odisha",
       "date": "2025-03-21",
       "type": "Personal",
-      "status": "Active"
+      "status": "Rejected"
     },
     {
       "id": 2,
@@ -13,7 +13,7 @@
       "address": "New York, USA",
       "date": "2025-03-20",
       "type": "Work",
-      "status": "Pending"
+      "status": "On Hold"
     },
     {
       "id": 3,
@@ -29,7 +29,7 @@
         "address": "Sydney, Australia",
         "date": "2025-03-18",
         "type": "Personal",
-        "status": "Active"
+        "status": "In Transit"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "address": "Toronto, Canada",
         "date": "2025-03-17",
         "type": "Work",
-        "status": "Pending"
+        "status": "Processing"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "address": "Berlin, Germany",
         "date": "2025-03-16",
         "type": "Other",
-        "status": "Completed"
+        "status": "On Hold"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "address": "Paris, France",
         "date": "2025-03-15",
         "type": "Personal",
-        "status": "Active"
+        "status": "In Transit"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "address": "Rome, Italy",
         "date": "2025-03-14",
         "type": "Work",
-        "status": "Pending"
+        "status": "Processing"
     },
     {
         "id": 9,
@@ -77,7 +77,7 @@
         "address": "Tokyo, Japan",
         "date": "2025-03-12",
         "type": "Personal",
-        "status": "Active"
+        "status": "In Transit"
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "address": "Beijing, China",
         "date": "2025-03-11",
         "type": "Work",
-        "status": "Pending"
+        "status": "Processing"
     },
     {
         "id": 12,
@@ -101,7 +101,7 @@
         "address": "Dubai, UAE",
         "date": "2025-03-09",
         "type": "Personal",
-        "status": "Active"
+        "status": "In Transit"
     },
     {
         "id": 14,
@@ -109,7 +109,7 @@
         "address": "Cape Town, South Africa",
         "date": "2025-03-08",
         "type": "Work",
-        "status": "Pending"
+        "status": "Processing"
     },
     {
         "id": 15,
@@ -125,7 +125,7 @@
         "address": "Rio de Janeiro, Brazil",
         "date": "2025-03-06",
         "type": "Personal",
-        "status": "Active"
+        "status": "In Transit"
     },
     {
         "id": 17,
@@ -133,7 +133,7 @@
         "address": "Buenos Aires, Argentina",
         "date": "2025-03-05",
         "type": "Work",
-        "status": "Pending"
+        "status": "Processing"
     },
     {
         "id": 18,
@@ -149,7 +149,7 @@
         "address": "Jakarta, Indonesia",
         "date": "2025-03-03",
         "type": "Personal",
-        "status": "Active"
+        "status": "In Transit"
     },
     {
         "id": 20,
@@ -157,7 +157,7 @@
         "address": "Bangkok, Thailand",
         "date": "2025-03-02",
         "type": "Work",
-        "status": "Pending"
+        "status": "Processing"
     },
     {
         "id": 21,
@@ -173,7 +173,7 @@
         "address": "Istanbul, Turkey",
         "date": "2025-02-28",
         "type": "Personal",
-        "status": "Active"
+        "status": "In Transit"
     },
     {
         "id": 23,
@@ -181,7 +181,7 @@
         "address": "Athens, Greece",
         "date": "2025-02-27",
         "type": "Work",
-        "status": "Pending"
+        "status": "Processing"
     },
     {
         "id": 24,
@@ -197,7 +197,7 @@
         "address": "Helsinki, Finland",
         "date": "2025-02-25",
         "type": "Personal",
-        "status": "Active"
+        "status": "In Transit"
     },
     {
         "id": 26,
@@ -205,7 +205,7 @@
         "address": "Oslo, Norway",
         "date": "2025-02-24",
         "type": "Work",
-        "status": "Pending"
+        "status": "Processing"
     },
     {
         "id": 27,
@@ -221,7 +221,7 @@
         "address": "Warsaw, Poland",
         "date": "2025-02-22",
         "type": "Personal",
-        "status": "Active"
+        "status": "In Transit"
     },
     {
         "id": 29,
@@ -229,7 +229,7 @@
         "address": "Lisbon, Portugal",
         "date": "2025-02-21",
         "type": "Work",
-        "status": "Pending"
+        "status": "Processing"
     },
     {
         "id": 30,
@@ -245,7 +245,7 @@
         "address": "Brussels, Belgium",
         "date": "2025-02-19",
         "type": "Personal",
-        "status": "Active"
+        "status": "In Transit"
     },
     {
         "id": 32,
@@ -253,7 +253,7 @@
         "address": "Lima, Peru",
         "date": "2025-02-18",
         "type": "Work",
-        "status": "Pending"
+        "status": "Processing"
     },
     {
         "id": 33,
@@ -269,7 +269,7 @@
         "address": "Bogota, Colombia",
         "date": "2025-02-16",
         "type": "Personal",
-        "status": "Active"
+        "status": "In Transit"
     },
     {
         "id": 35,
@@ -277,7 +277,7 @@
         "address": "Caracas, Venezuela",
         "date": "2025-02-15",
         "type": "Work",
-        "status": "Pending"
+        "status": "Processing"
     },
     {
         "id": 36,
@@ -293,7 +293,7 @@
         "address": "La Paz, Bolivia",
         "date": "2025-02-13",
         "type": "Personal",
-        "status": "Active"
+        "status": "In Transit"
     },
     {
         "id": 38,
@@ -301,7 +301,7 @@
         "address": "Asuncion, Paraguay",
         "date": "2025-02-12",
         "type": "Work",
-        "status": "Pending"
+        "status": "Processing"
     },
     {
         "id": 39,
@@ -317,7 +317,7 @@
         "address": "Georgetown, Guyana",
         "date": "2025-02-10",
         "type": "Personal",
-        "status": "Active"
+        "status": "In Transit"
     },
     {
         "id": 41,
@@ -325,7 +325,7 @@
         "address": "Kingston, Jamaica",
         "date": "2025-02-09",
         "type": "Work",
-        "status": "Pending"
+        "status": "Processing"
     },
     {
         "id": 42,

@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSWbUjZvWrcexXabVupH541th0wZ5k_2_41H_rUWOYQvdasiOnKvH-slLcxi-YoSPlDYKnSUaIRohSreBvuRO7J0eJfLB4vOsxhVsA6DU0h",
+        "name": "Apple Watch Series 4",
+        "category": "Digital Product",
+        "price": "$690.00",
+        "pieces": 63,
+        "colors": [
+            "#000000",
+            "#C0C0C0",
+            "#F4A4A4"
+        ],
+        "location": "6096 Marjolaine Landing",
+        "time": "10:30 AM",
+        "quantity": 423,
+        "shippingPrice": 34295,
+        "status": "Shipped"
+    },
+    {
+        "id": 2,
+        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQOyLmDqGlas2x0zjZt4lZ328DrHLLzj_YdYA7PjL9OBCe4O-BumL66vUjZnQ3GqrIl_w77u7hakC9RG1QB8vw-zoREp6uDsdVpIyy7Mv1lKUgwdtc1EIJU&usqp=CAE",
+        "name": "Microsoft Headsquare",
+        "category": "Digital Product",
+        "price": "$190.00",
+        "pieces": 13,
+        "colors": [
+            "#000000",
+            "#1976D2",
+            "#F4D03F",
+            "#F4A4A4"
+        ],
+        "location": "742 Evergreen Terrace",
+        "time": "4:45 PM",
+        "quantity": 120,
+        "shippingPrice": 29990,
+        "status": "Delivered"
+    },
+    {
+        "id": 3,
+        "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSMUhJQ2RUzGQQZq6cXW1dVsWlv0m8xNAo0tl5NE97ZI5T35JbN1UfQcOgMlkkTcQbuRpqLKMtxGvf-rmAIo9aBq88Ex9doHJ3DaiHuIWU&usqp=CAE",
+        "name": "Women's Dress",
+        "category": "Fashion",
+        "price": "$640.00",
+        "pieces": 635,
+        "colors": [
+            "#A93226",
+            "#8E44AD",
+            "#2874A6"
+        ],
+        "location": "500 Fifth Avenue",
+        "time": "3:30 PM",
+        "quantity": 87,
+        "shippingPrice": 129900,
+        "status": "Out for Delivery"
+    },
+    {
+        "id": 4,
+        "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQkrLx2_qIY4gcwCyQuMPBd6i341_9VggTFIPAzkvVjZR57v8gazmFISGmaverTlVJSUII67q8YnaRn7lpYaQUeccb_LyuCCUyES8GQH31hdYlaNxjKEmQeQA&usqp=CAE",
+        "name": "Samsung A50",
+        "category": "Mobile",
+        "price": "$400.00",
+        "pieces": 67,
+        "colors": [
+            "#000000",
+            "#00008B",
+            "#D2B48C"
+        ],
+        "location": "2391 Jasmine Street",
+        "time": "2:15 PM",
+        "quantity": 198,
+        "shippingPrice": 109999,
+        "status": "Out for Delivery"
+    },
+    {
+        "id": 5,
+        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTLYGe4GFr3xI9VXDT_KpbhBvWA5GL_AGq6s2jJn9occNCkwtAoxzAqsxlu6LjJ8qYrEd_vNPzB68jA1vLEyHNAKjSMm4_iepH-7QdW3Ik&usqp=CAE",
+        "name": "Camera",
+        "category": "Electronic",
+        "price": "$420.00",
+        "pieces": 52,
+        "colors": [
+            "#000000",
+            "#00008B",
+            "#F4A4A4"
+        ],
+        "location": "1225 Sunset Boulevard",
+        "time": "1:00 PM",
+        "quantity": 54,
+        "shippingPrice": 249999,
+        "status": "Shipped"
+    },
+    {
+        "id": 6,
+        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTtloYGp_shzF8YLFbwWfaMBQRldxBIn-CnsKhU65X9UBW8gjvb8BFGWiUX9_mJu-NRUODFZ6Z0M4lve7txQe7wEquFhIfhUMtR9ymIDjU&usqp=CAE",
+        "name": "Dell XPS 13",
+        "category": "Laptop",
+        "price": "$1149.99",
+        "pieces": 76,
+        "colors": [
+            "#000000",
+            "#C0C0C0",
+            "#1976D2"
+        ],
+        "location": "200 Elm Street",
+        "time": "11:20 AM",
+        "quantity": 76,
+        "shippingPrice": 114999,
+        "status": "Delivered"
+    },
+    {
+        "id": 7,
+        "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSqjsLT5rKhOhoN7cbARpFmG33iRAZXwhhB_7Yb_sislBTkOfkJySt3QKYpptaEe7HuUz7Mh5R6p35jxpOoCGb3VkIZmBWjluzIQLgb3zDb-f4KM1e-2aHr&usqp=CAE",
+        "name": "Google Pixel 8 Pro",
+        "category": "Mobile",
+        "price": "$999.99",
+        "pieces": 150,
+        "colors": [
+            "#000000",
+            "#1976D2",
+            "#F4D03F"
+        ],
+        "location": "1337 Binary Road",
+        "time": "5:15 PM",
+        "quantity": 150,
+        "shippingPrice": 99999,
+        "status": "Shipped"
+    }
+    
+]

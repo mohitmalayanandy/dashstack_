@@ -39,17 +39,17 @@ const DataTable = () => {
   const getStatusClass = (status) => {
     switch (status) {
       case "Completed":
-        return "bg-green-100 text-green-600";
+        return "text-green-600";
       case "Processing":
-        return "bg-blue-100 text-blue-600";
+        return "text-blue-600";
       case "Rejected":
-        return "bg-red-100 text-red-600";
+        return "text-red-600";
       case "On Hold":
-        return "bg-yellow-100 text-yellow-600";
+        return "text-yellow-600";
       case "In Transit":
-        return "bg-purple-100 text-purple-600";
+        return "text-purple-600";
       default:
-        return "bg-gray-100 text-gray-600";
+        return "text-gray-600";
     }
   };
 
@@ -133,7 +133,7 @@ const DataTable = () => {
                 <td className="py-2 px-4 border-b">{item.type}</td>
                 <td className="py-2 px-4 border-b">
                   <span
-                    className={`px-2 py-1 rounded-full text-sm ${getStatusClass(
+                    className={`px-3 py-1 rounded-full text-sm ${getStatusClass(
                       item.status
                     )}`}
                   >

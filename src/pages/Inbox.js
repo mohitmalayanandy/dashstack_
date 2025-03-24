@@ -11,9 +11,9 @@ import Bin from '../components/inbox/Bin';
 
 const Inbox = () => {
   return (
-    <div className="flex flex-col h-full p-5">
+    <div className="flex flex-col h-full">
       <h2 className="text-lg font-semibold ml-5">Inbox</h2>
-      <div className="flex justify-between rounded-lg shadow-lg p-4 h-full">
+      <div className="flex justify-between rounded-lg shadow-lg h-full">
         <MailList />
         <div className="flex-1 h-full ml-2 bg-white rounded-lg p-4">
           <Routes>
